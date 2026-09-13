@@ -1,0 +1,10 @@
+# dsh-9router — Full 9Router inside DSH Desktop
+# - Host: single "9router" LLM adapter (122 providers, 743 models, 4 combos default) via Harness LlmRuntime
+# - HTTP: OpenAI-compatible gateway on Harness origin (/api/9router/v1 + /v1) via connection.fetch + webServer
+# - Client: Dashboard as native DSH window (Einstellungen → 9Router), not a browser tab
+# - Store: portable JSON under ~/.dsh/dsh-9router (no native better-sqlite3)
+- insert:
+    - id: dsh-9router
+      name: dsh-9router
+      config:
+        isolatedGateway: true
